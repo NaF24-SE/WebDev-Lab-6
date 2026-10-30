@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 06 - Question 2</title>
+</head>
+<body>
+    <h2>Lab 06 - Question 2 (Inspect Console)</h2>
+
+    <script>
+        const bookData = {
+            "Books": [
+                {
+                    "title": "The Great Gatsby",
+                    "author": "F. Scott Fitzgerald",
+                    "publicationYear": 1925,
+                    "genres": ["Fiction", "Classics"]
+                },
+                {
+                    "title": "To Kill a Mockingbird",
+                    "author": "Harper Lee",
+                    "publicationYear": 1960,
+                    "genres": ["Fiction", "Coming-of-Age"]
+                }
+            ]
+        };
+
+        //Book Title//
+        console.log("1. First Book Title:", bookData.Books[0].title);
+
+        // Book Author//
+        console.log("2. Second Book Author:", bookData.Books[1].author);
+
+        // Book Genres//
+        console.log("3. Genres of All Books:");
+        bookData.Books.forEach((book, index) => {
+            console.log(`- ${book.title}: ${book.genres.join(", ")}`);
+        });
+    </script>
+</body>
+</html>
