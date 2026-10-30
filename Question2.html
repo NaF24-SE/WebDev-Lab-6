@@ -25,13 +25,10 @@
             ]
         };
 
-        //Book Title//
         console.log("1. First Book Title:", bookData.Books[0].title);
 
-        // Book Author//
         console.log("2. Second Book Author:", bookData.Books[1].author);
 
-        // Book Genres//
         console.log("3. Genres of All Books:");
         bookData.Books.forEach((book, index) => {
             console.log(`- ${book.title}: ${book.genres.join(", ")}`);
